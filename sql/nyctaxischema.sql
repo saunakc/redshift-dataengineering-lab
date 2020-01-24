@@ -2,6 +2,8 @@ SET query_group TO 'ingest';
 
 CREATE SCHEMA taxischema;
 
+CREATE EXTERNAL SCHEMA spectrum_schema FROM DATA CATALOG database 'default' region '{0}'  iam_role '{1}';
+
 CREATE TABLE taxischema.nyc_greentaxi(
   vendorid varchar(10), 
   lpep_pickup_datetime timestamp, 
@@ -24,4 +26,3 @@ CREATE TABLE taxischema.nyc_greentaxi(
   trip_type varchar(10), 
   congestion_surcharge decimal(8,2))
 ;
-
