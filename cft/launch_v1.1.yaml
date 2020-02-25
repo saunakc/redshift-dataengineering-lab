@@ -291,7 +291,11 @@ Resources:
         IpProtocol: 'tcp'
         FromPort: 0
         ToPort: 65535
-      - CidrIp:  54.70.204.128/27
+      - CidrIp:  52.23.63.224/27
+        IpProtocol: 'tcp'
+        FromPort: 0
+        ToPort: 65535
+      - CidrIp: 54.70.204.128/27
         IpProtocol: 'tcp'
         FromPort: 0
         ToPort: 65535
@@ -300,10 +304,6 @@ Resources:
         FromPort: 0
         ToPort: 65535
       - CidrIp: 35.158.127.192/27
-        IpProtocol: 'tcp'
-        FromPort: 0
-        ToPort: 65535
-      - CidrIp: 35.177.218.0/27
         IpProtocol: 'tcp'
         FromPort: 0
         ToPort: 65535
